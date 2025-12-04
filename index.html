@@ -1,10 +1,70 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Military Play</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Text</h1>
+
+  <div id="background">
+    <div class="bg-overlay"></div>
+    <div class="bg-vignette"></div>
+    <div class="bg-grain"></div>
+  </div>
+
+  <div class="overlay">
+    <!-- left -->
+    <aside class="side-panel">
+        <div class="panel-upheader">
+            <h1>ОПЕРАТИВНАЯ СВОДКА</h1>
+        </div>
+      <div class="panel-header">
+        <div class="panel-brand">
+          <img class="brand-logo" src="load/images/logo.png" alt="Логотип проекта">
+          <span class="brand-text">MILITARY PLAY TEAM</span>
+        </div>
+        <hr class="panel-divider">
+        <h1 id="panel-title"></h1>
+      </div>
+
+
+      <div class="panel-scroll">
+        <div class="panel-body">
+          <div id="panel-desc"></div>
+          <div class="panel-tip">
+            <hr class="panel-divider">
+            <div class="tip-label">Архив</div>
+            <p id="panel-tip"></p>
+          </div>
+        </div>
+
+        <div class="scroll-fade"></div>
+      </div>
+    </aside>
+
+    <!-- right -->
+    <main class="main-content">
+      <div class="top-bar">
+        <div class="progress-container minimal">
+          <div class="progress-bar minimal" id="progress-bar"></div>
+        </div>
+        <div class="loading-phrase" id="loading-phrase">Подготовка данных…</div>
+        <div class="progress-percent" id="progress-text">0%</div>
+      </div>
+
+      <!-- useless? -->
+      <div class="info-panel"></div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
